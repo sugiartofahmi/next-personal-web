@@ -1,8 +1,9 @@
 import MainLayout from "../../layouts/MainLayout";
+import HomeModules from "../../modules/Home";
 const Home = () => {
   return (
     <MainLayout>
-      <h1>Halo</h1>
+      <HomeModules />
     </MainLayout>
   );
 };

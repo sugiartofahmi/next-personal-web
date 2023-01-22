@@ -7,9 +7,7 @@ type BaseLayoutType = {
 
 const BaseLayout: FC<BaseLayoutType> = ({ children, md }) => {
   return (
-    <section
-      className={`w-full md:${md} container flex flex-col rounded-lg gap-y-5`}
-    >
+    <section className={`w-full md:${md} flex flex-col rounded-lg gap-y-5`}>
       {children}
     </section>
   );

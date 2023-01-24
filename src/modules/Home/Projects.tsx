@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-himatif.png"
+            src="./src/assets/image/project-himatif.png"
             alt="HIMATIF"
           />
           <div className="px-3 py-3">
@@ -19,7 +19,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-survey.png"
+            src="./src/assets/image/project-survey.png"
             alt="Survey Form"
           />
           <div className="px-3 py-3">
@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-votsu.jpeg"
+            src="./src/assets/image/project-votsu.jpeg"
             alt="VOTING"
           />
           <div className="px-3 py-3">
@@ -50,7 +50,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-makrab.jpeg"
+            src="./src/assets/image/project-makrab.jpeg"
             alt="Makrab"
           />
           <div className="px-3 py-3">
@@ -61,7 +61,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-adhoc.png"
+            src="./src/assets/image/project-adhoc.png"
             alt="ADHOC"
           />
           <div className="px-3 py-3">
@@ -74,7 +74,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-taskxu.jpeg"
+            src="./src/assets/image/project-taskxu.jpeg"
             alt="TASKXU"
           />
           <div className="px-3 py-3">
@@ -85,7 +85,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-makrab.jpeg"
+            src="./src/assets/image/project-makrab.jpeg"
             alt="Makrab"
           />
           <div className="px-3 py-3">
@@ -96,7 +96,7 @@ const Projects = () => {
         <div className="hover:scale-105 ease-in-out duration-300 transition flex flex-col justify-center w-full md:w-1/3 bg-blue-500 rounded-lg overflow-hidden text-white hover:bg-green-400 cursor-pointer">
           <img
             className=""
-            src="src/assets/image/project-adhoc.png"
+            src="./src/assets/image/project-adhoc.png"
             alt="ADHOC"
           />
           <div className="px-3 py-3">

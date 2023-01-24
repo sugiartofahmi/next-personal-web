@@ -6,7 +6,7 @@ const Header = () => {
       <img
         width="100"
         className="rounded-lg border-solid border-2 border-gray-400 drop-shadow-lg"
-        src="src/assets/image/my-foto.jpg"
+        src="./src/assets/image/my-foto.jpg"
         alt="My Foto"
       />
       <h1 className="text-xl font-bold">Mohammad Nurfahmi Sugiarto</h1>

@@ -1,11 +1,6 @@
-import MainLayout from "../../layouts/MainLayout";
-import HomeModules from "../../modules/Home";
+import Navbar from "../../components/Navbar";
 const Home = () => {
-  document.title = "Its Me";
-  return (
-    <MainLayout>
-      <HomeModules />
-    </MainLayout>
-  );
+  document.title = "Its Me | Home";
+  return <Navbar />;
 };
 export default Home;

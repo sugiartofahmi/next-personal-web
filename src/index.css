@@ -1,4 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .icon {
+    font-size: 11px;
+  }
+}
+
+.active,
+a:hover {
+  background: -webkit-linear-gradient(left, #3a80f5, #4bdf80);
+  background: -o-linear-gradient(right, #3a80f5, #4bdf80);
+  background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
+  background: linear-gradient(to right, #3a80f5, #4bdf80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

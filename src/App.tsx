@@ -1,6 +1,7 @@
-import Home from "./views/Home";
+import { RouterProvider } from "react-router";
+import Router from "./router";
 const App = () => {
-  return <Home />;
+  return <RouterProvider router={Router} />;
 };
 
 export default App;

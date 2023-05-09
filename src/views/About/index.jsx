@@ -33,7 +33,7 @@ const About = () => {
             </p>
           </section>
           <section className="flex flex-col gap-y-1">
-            <h1 className="md:text-4xl text-2xl font-extrabold text-gradient  ">
+            <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[850px] ">
               What technology am I currently using ?
             </h1>
             <ul className="md:text-lg text-base list-disc md:pl-7 pl-5">

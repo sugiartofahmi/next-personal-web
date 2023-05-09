@@ -19,7 +19,7 @@ const Home = () => {
       <ContentLayout>
         <section
           data-aos="fade-up"
-          className=" flex gap-y-7 md:flex-row flex-col justify-center w-full items-center"
+          className=" flex gap-y-7 md:flex-row flex-col justify-center w-full items-center md:py-0 py-5"
         >
           <section className="md:w-1/2 w-full flex flex-col md:items-start items-center md:gap-y-4 gap-y-3 ">
             <h1 className="md:text-3xl text-2xl font-bold">

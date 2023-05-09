@@ -23,7 +23,7 @@ const Projects = () => {
           className=" w-full flex flex-col gap-y-6 md:py-8 py-4"
         >
           <section className="flex flex-col gap-y-1">
-            <h1 className="md:text-4xl text-3xl font-extrabold text-gradient md:w-[210px] w-[150px]">
+            <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
               Projects
             </h1>
             <p className="md:text-base text-sm">

@@ -17,7 +17,7 @@ const About = () => {
       <ContentLayout>
         <section
           data-aos="fade-up"
-          className=" w-full flex flex-col md:gap-y-5 gap-y-3 md:py-8 py-4"
+          className=" w-full flex flex-col md:gap-y-4 gap-y-3 md:py-8 py-4"
         >
           <section className="flex flex-col gap-y-1">
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">

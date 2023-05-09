@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,16 +10,50 @@
 
 @media only screen and (max-width: 768px) {
   .icon {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
-.active,
-a:hover {
+.active {
   background: -webkit-linear-gradient(left, #3a80f5, #4bdf80);
   background: -o-linear-gradient(right, #3a80f5, #4bdf80);
   background: -moz-linear-gradient(right, #3a80f5, #4bdf80);
   background: linear-gradient(to right, #3a80f5, #4bdf80);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: inline-block;
+  position: relative;
+}
+
+.nav:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text-gradient {
+  background: #3a80f5;
+  background: linear-gradient(to right, #3a80f5 25%, #4bdf80 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-shadow-gradient {
+  box-shadow: #3a80f5 0px 0px 1px, rgba(0, 0, 0, 0.12) 0px -6px 10px,
+    #4bdf80 0px 4px 6px, #3a80f5 0px 1px 13px, #4bdf80 0px -3px 5px;
 }

@@ -30,7 +30,7 @@ const Projects = () => {
               Here are some of my projects on front-end website development
             </p>
           </section>
-          <section className="flex flex-wrap w-full gap-x-4  gap-y-5">
+          <section className="flex flex-wrap w-full gap-x-4  md:gap-y-5 gap-y-4">
             <section className="ease-in duration-300 md:w-[350px] w-[320px] md:h-[330px] h-[310px] rounded-lg border-[1px] border-[#232322] dark:border-white flex flex-col gap-4">
               <figure className="">
                 <img className="rounded-t-lg" src="/shortway.png" alt="" />

@@ -24,7 +24,7 @@ const About = () => {
         >
           <section className="flex flex-col gap-y-1">
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
-              Who am I?
+              Who am I ?
             </h1>
             <p className="md:text-lg text-base md:pl-2 pl-1">
               I am a student pursuing a degree in technology. I have experience

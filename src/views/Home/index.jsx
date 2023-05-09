@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect } from "react";
 const Home = () => {
-  document.title = "Its Me | Home";
   useEffect(() => {
     AOS.init({
       once: true,

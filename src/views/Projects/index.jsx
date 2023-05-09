@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { TbWorld } from "react-icons/tb";
 const Projects = () => {
-  document.title = "Its Me | Projects";
   useEffect(() => {
     AOS.init({
       once: true,

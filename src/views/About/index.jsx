@@ -4,10 +4,7 @@ import ContentLayout from "../../layouts/ContentLayout";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { TbWorld } from "react-icons/tb";
 const About = () => {
-  document.title = "Its Me | About";
   useEffect(() => {
     AOS.init({
       once: true,
@@ -36,7 +33,7 @@ const About = () => {
             </p>
           </section>
           <section className="flex flex-col gap-y-1">
-            <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[900px] ">
+            <h1 className="md:text-4xl text-2xl font-extrabold text-gradient  ">
               What technology am I currently using ?
             </h1>
             <ul className="md:text-lg text-base list-disc md:pl-7 pl-5">

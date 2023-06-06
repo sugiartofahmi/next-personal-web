@@ -25,7 +25,7 @@ const Projects = () => {
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
               Projects
             </h1>
-            <p className="md:text-base text-sm">
+            <p className="md:text-base text-sm font-light text-gray-300 ">
               Here are some of my projects on front-end website development
             </p>
           </section>
@@ -36,7 +36,7 @@ const Projects = () => {
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Shortway</h1>
-                <p className="md:text-base text-sm">
+                <p className="md:text-base text-sm font-light text-gray-300 ">
                   Create a website application to shorten long urls
                 </p>
               </section>
@@ -64,7 +64,7 @@ const Projects = () => {
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Quickchat</h1>
-                <p className="md:text-base text-sm">
+                <p className="md:text-base text-sm font-light text-gray-300 ">
                   Create a website application that generates urls from whatsapp
                   numbers
                 </p>
@@ -95,7 +95,7 @@ const Projects = () => {
                 <h1 className="md:text-xl text-lg font-extrabold">
                   Weather App
                 </h1>
-                <p className="md:text-base text-sm">
+                <p className="md:text-base text-sm font-light text-gray-300">
                   Create a website application to see the weather with the city
                   search feature
                 </p>
@@ -124,7 +124,7 @@ const Projects = () => {
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Todo List</h1>
-                <p className="md:text-base text-sm">
+                <p className="md:text-base text-sm font-light text-gray-300">
                   Create a website application to create todo lists with local
                   storage
                 </p>

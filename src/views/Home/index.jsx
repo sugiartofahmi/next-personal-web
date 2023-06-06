@@ -38,15 +38,30 @@ const Home = () => {
             <section className="md:w-[400px] w-[200px] md:hidden flex">
               <img className="rounded-full" src="/fahmi.jpg" alt="" />
             </section>
-            <p className="md:text-lg text-base md:text-left text-center">
+            <p className="md:text-lg text-base md:text-left font-light text-gray-300 text-center">
               Informatics engineering student at Nusantara Islamic University,
               has an interest in website development, especially in front end
               web developer
             </p>
-            <section>
-              <button className="md:text-base text-sm shadow-lg button-shadow-gradient dark:text-white text-[#232322]  dark:bg-[#232322] bg-white mt-2 p-2 rounded hover:scale-110 ease-in duration-300">
-                <a href="/CV-Mohammad Nurfahmi Sugiarto.pdf">Download CV</a>
-              </button>
+            <section className="flex gap-5 md:text-lg text-base">
+              <a
+                className="underline underline-offset-4 decoration-dotted decoration-1"
+                href="/CV-MOHAMMAD NURFAHMI SUGIARTO.pdf"
+              >
+                Resume
+              </a>
+              <a
+                className="underline underline-offset-4 decoration-dotted decoration-1"
+                href="https://www.linkedin.com/in/mohammad-nurfahmi-sugiarto/"
+              >
+                Linked In
+              </a>
+              <a
+                className="underline underline-offset-4 decoration-dotted decoration-1"
+                href="https://github.com/sugiartofahmi"
+              >
+                Github
+              </a>
             </section>
           </section>
 

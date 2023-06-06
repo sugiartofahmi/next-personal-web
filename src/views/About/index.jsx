@@ -1,24 +1,15 @@
 import { Fragment } from "react";
 import Navbar from "../../components/Navbar";
 import ContentLayout from "../../layouts/ContentLayout";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useRecoilValue } from "recoil";
+import { themeState } from "../../store";
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 500,
-    });
-  });
+  const theme = useRecoilValue(themeState);
   return (
     <Fragment>
       <Navbar />
       <ContentLayout>
-        <section
-          data-aos="fade-up"
-          className=" w-full flex flex-col md:gap-y-4 gap-y-3 md:py-8 py-4"
-        >
+        <section className=" w-full flex flex-col md:gap-y-4 gap-y-3 md:py-8 py-4">
           <section className="flex flex-col gap-y-1">
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
               Who am I ?
@@ -30,7 +21,7 @@ const About = () => {
               <a
                 target="_blank"
                 href="https://react.dev/"
-                className="underline underline-offset-4 decoration-dotted decoration-1"
+                className="underline underline-offset-4 decoration-dotted dark:decoration-1 decoration-2"
               >
                 React JS
               </a>{" "}
@@ -38,7 +29,7 @@ const About = () => {
               <a
                 target="_blank"
                 href="https://tailwindcss.com/"
-                className="underline underline-offset-4 decoration-dotted decoration-1"
+                className="underline underline-offset-4 decoration-dotted dark:decoration-1 decoration-2"
               >
                 Tailwind CSS
               </a>{" "}
@@ -56,7 +47,17 @@ const About = () => {
               <img className="w-[150px]" src="/node-icon.svg" alt="" />
               <img className="w-[100px]" src="/react-icon.svg" alt="" />
               <img className="w-[100px]" src="/tailwind-icon.svg" alt="" />
-              <img className="w-[90px]" src="/express-icon.svg" alt="" />
+
+              <img
+                className="w-[90px] "
+                src={
+                  theme == "dark"
+                    ? "/express-icon.svg"
+                    : "/express-black-icon.svg"
+                }
+                alt=""
+              />
+
               <img className="w-[100px]" src="/mongodb-icon.svg" alt="" />
             </ul>
           </section>

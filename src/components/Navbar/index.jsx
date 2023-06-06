@@ -1,43 +1,28 @@
 import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 import NavLayout from "../../layouts/NavLayout";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
+import { themeState } from "../../store";
+
 const Navbar = () => {
-  const [theme, setTheme] = useState(() =>
-    localStorage.getItem("theme") == null
-      ? "dark"
-      : JSON.parse(localStorage.getItem("theme"))
-  );
-  const location = useLocation();
-  const [nav, setNav] = useState([
+  const [theme, setTheme] = useRecoilState(themeState);
+
+  const nav = [
     {
       element: "Home",
       path: "/",
-      isActive: false,
     },
     {
       element: "About",
       path: "/about",
-      isActive: false,
     },
     {
       element: "Projects",
       path: "/projects",
-      isActive: false,
     },
-  ]);
-  useEffect(() => {
-    setNav((prev) =>
-      prev.map((el) => {
-        if (el.path == location.pathname) {
-          return { ...el, isActive: true };
-        } else {
-          return { ...el, isActive: false };
-        }
-      })
-    );
-  }, []);
+  ];
+
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
     theme === "dark"
@@ -58,13 +43,9 @@ const Navbar = () => {
       <nav className="md:w-1/3 w-full flex justify-center items-center">
         <ul className="flex flex-row  md:gap-5 gap-4 dark:font-bold font-extrabold md:text-lg text-base">
           {nav.map((el, i) => (
-            <Link
-              key={i}
-              className={`nav cursor-pointer ${el.isActive && "active"}`}
-              to={`${el.path}`}
-            >
+            <NavLink key={i} className="nav cursor-pointer " to={`${el.path}`}>
               {el.element}
-            </Link>
+            </NavLink>
           ))}
         </ul>
       </nav>

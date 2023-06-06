@@ -15,6 +15,7 @@
 }
 
 .active {
+  font-weight: bolder;
   background: -webkit-linear-gradient(left, #3a80f5, #4bdf80);
   background: -o-linear-gradient(right, #3a80f5, #4bdf80);
   background: -moz-linear-gradient(right, #3a80f5, #4bdf80);

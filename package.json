@@ -15,7 +15,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "react-simple-typewriter": "^5.0.1",
-    "recoil": "^0.7.6"
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

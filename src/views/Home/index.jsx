@@ -1,25 +1,15 @@
 import { Fragment } from "react";
 import Navbar from "../../components/Navbar";
 import ContentLayout from "../../layouts/ContentLayout";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import { Typewriter } from "react-simple-typewriter";
-import { useEffect } from "react";
+
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 500,
-    });
-  });
   return (
     <Fragment>
       <Navbar />
       <ContentLayout>
-        <section
-          data-aos="fade-up"
-          className=" flex gap-y-7 md:flex-row flex-col justify-center w-full items-center md:py-0 py-5"
-        >
+        <section className=" flex gap-y-7 md:flex-row flex-col justify-center w-full items-center md:py-0 py-5">
           <section className="md:w-1/2 w-full flex flex-col md:items-start items-center md:gap-y-4 gap-y-3 ">
             <h1 className="md:text-3xl text-2xl font-bold">
               Hello world, i am,
@@ -38,7 +28,7 @@ const Home = () => {
             <section className="md:w-[400px] w-[200px] md:hidden flex">
               <img className="rounded-full" src="/fahmi.jpg" alt="" />
             </section>
-            <p className="md:text-lg text-base md:text-left dark:font-light font-bold dark:text-gray-300 text-gray-800 text-center">
+            <p className="md:text-lg text-base md:text-left dark:font-normal font-bold dark:text-gray-300 text-gray-800 text-center">
               Informatics engineering student at Nusantara Islamic University,
               has an interest in website development, especially in front end
               web developer
@@ -46,21 +36,21 @@ const Home = () => {
             <section className="flex gap-5 md:text-lg text-base dark:font-medium font-bold">
               <a
                 target="_blank"
-                className="underline underline-offset-4 decoration-dotted decoration-1"
+                className="underline underline-offset-4 decoration-dotted dark:decoration-1 decoration-2"
                 href="/CV-MOHAMMAD NURFAHMI SUGIARTO.pdf"
               >
                 Resume
               </a>
               <a
                 target="_blank"
-                className="underline underline-offset-4 decoration-dotted decoration-1"
+                className="underline underline-offset-4 decoration-dotted dark:decoration-1 decoration-2"
                 href="https://www.linkedin.com/in/mohammad-nurfahmi-sugiarto/"
               >
                 Linked In
               </a>
               <a
                 target="_blank"
-                className="underline underline-offset-4 decoration-dotted decoration-1"
+                className="underline underline-offset-4 decoration-dotted dark:decoration-1 decoration-2"
                 href="https://github.com/sugiartofahmi"
               >
                 Github

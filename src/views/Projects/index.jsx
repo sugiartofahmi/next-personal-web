@@ -1,31 +1,19 @@
 import { Fragment } from "react";
 import Navbar from "../../components/Navbar";
 import ContentLayout from "../../layouts/ContentLayout";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { TbWorld } from "react-icons/tb";
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 500,
-    });
-  });
   return (
     <Fragment>
       <Navbar />
       <ContentLayout>
-        <section
-          data-aos="fade-up"
-          className=" w-full flex flex-col gap-y-6 md:py-8 py-4"
-        >
+        <section className=" w-full flex flex-col gap-y-6 md:py-8 py-4">
           <section className="flex flex-col gap-y-1">
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
               Projects
             </h1>
-            <p className="md:text-base text-sm dark:font-light font-bold dark:text-gray-300 text-slate-900 ">
+            <p className="md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900 ">
               Here are some of my projects on front-end website development
             </p>
           </section>
@@ -36,7 +24,7 @@ const Projects = () => {
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Shortway</h1>
-                <p className="md:text-base text-sm dark:font-light font-bold dark:text-gray-300 text-slate-900 ">
+                <p className="md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900 ">
                   Create a website application to shorten long urls
                 </p>
               </section>
@@ -58,13 +46,13 @@ const Projects = () => {
                 </a>
               </section>
             </section>
-            <section className="ease-in duration-300 md:w-[350px] w-[320px] md:h-[330px] h-[310px] rounded-lg border-[1px] border-[#232322] dark:border-white flex flex-col gap-4">
+            <section className=" ease-in duration-300 md:w-[350px] w-[320px] md:h-[330px] h-[310px] rounded-lg border-[1px] border-[#232322] dark:border-white flex flex-col gap-4">
               <figure className="">
                 <img className="rounded-t-lg" src="/quickchat.png" alt="" />
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Quickchat</h1>
-                <p className="md:text-base text-sm dark:font-light font-bold dark:text-gray-300 text-slate-900 ">
+                <p className="md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900 ">
                   Create a website application that generates urls from whatsapp
                   numbers
                 </p>
@@ -95,7 +83,7 @@ const Projects = () => {
                 <h1 className="md:text-xl text-lg font-extrabold">
                   Weather App
                 </h1>
-                <p className="md:text-base text-sm dark:font-light font-bold dark:text-gray-300 text-slate-900">
+                <p className="md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900">
                   Create a website application to see the weather with the city
                   search feature
                 </p>
@@ -124,7 +112,7 @@ const Projects = () => {
               </figure>
               <section className="px-4 flex flex-col gap-1">
                 <h1 className="md:text-xl text-lg font-extrabold">Todo List</h1>
-                <p className="md:text-base text-sm dark:font-light font-bold dark:text-gray-300 text-slate-900">
+                <p className="md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900">
                   Create a website application to create todo lists with local
                   storage
                 </p>

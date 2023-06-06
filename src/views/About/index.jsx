@@ -26,22 +26,22 @@ const About = () => {
             <h1 className="md:text-lg text-base md:pl-2 pl-1 font-normal leading-relaxed">
               An informatics engineering student with experience in web
               programming, especially in front end development using HTML, CSS
-              and JavaScript. Besides that, I also have expertise in using the
+              and JavaScript. Besides that, I also have expertise in using the{" "}
               <a
+                target="_blank"
                 href="https://react.dev/"
                 className="underline underline-offset-4 decoration-dotted decoration-1"
               >
-                {" "}
-                React JS{" "}
-              </a>
+                React JS
+              </a>{" "}
               framework and{" "}
               <a
+                target="_blank"
                 href="https://tailwindcss.com/"
                 className="underline underline-offset-4 decoration-dotted decoration-1"
               >
-                {" "}
-                Tailwind CSS{" "}
-              </a>
+                Tailwind CSS
+              </a>{" "}
               . I am very interested in doing an internship in front-end web
               development and I'm sure I can make a positive contribution for
               the company

@@ -45,18 +45,21 @@ const Home = () => {
             </p>
             <section className="flex gap-5 md:text-lg text-base">
               <a
+                target="_blank"
                 className="underline underline-offset-4 decoration-dotted decoration-1"
                 href="/CV-MOHAMMAD NURFAHMI SUGIARTO.pdf"
               >
                 Resume
               </a>
               <a
+                target="_blank"
                 className="underline underline-offset-4 decoration-dotted decoration-1"
                 href="https://www.linkedin.com/in/mohammad-nurfahmi-sugiarto/"
               >
                 Linked In
               </a>
               <a
+                target="_blank"
                 className="underline underline-offset-4 decoration-dotted decoration-1"
                 href="https://github.com/sugiartofahmi"
               >

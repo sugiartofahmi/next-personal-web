@@ -38,12 +38,12 @@ const Home = () => {
             <section className="md:w-[400px] w-[200px] md:hidden flex">
               <img className="rounded-full" src="/fahmi.jpg" alt="" />
             </section>
-            <p className="md:text-lg text-base md:text-left font-light text-gray-300 text-center">
+            <p className="md:text-lg text-base md:text-left dark:font-light font-bold dark:text-gray-300 text-gray-800 text-center">
               Informatics engineering student at Nusantara Islamic University,
               has an interest in website development, especially in front end
               web developer
             </p>
-            <section className="flex gap-5 md:text-lg text-base">
+            <section className="flex gap-5 md:text-lg text-base dark:font-medium font-bold">
               <a
                 target="_blank"
                 className="underline underline-offset-4 decoration-dotted decoration-1"

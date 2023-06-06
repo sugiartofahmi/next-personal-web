@@ -23,7 +23,7 @@ const About = () => {
             <h1 className="md:text-4xl text-2xl font-extrabold text-gradient md:w-[210px] w-[150px]">
               Who am I ?
             </h1>
-            <h1 className="md:text-lg text-base md:pl-2 pl-1 font-normal leading-relaxed">
+            <h1 className="md:text-lg text-base md:pl-2 pl-1 dark:font-normal font-bold leading-relaxed">
               An informatics engineering student with experience in web
               programming, especially in front end development using HTML, CSS
               and JavaScript. Besides that, I also have expertise in using the{" "}

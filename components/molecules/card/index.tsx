@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { FC, ReactElement } from "react";
 import { TPropsCard } from "./types";
 import { Button } from "@/components/atoms";
@@ -24,7 +23,7 @@ export const Card: FC<TPropsCard> = ({
       </figure>
       <div className="px-4 flex flex-col gap-1">
         <h1 className="md:text-2xl text-lg font-extrabold">{title}</h1>
-        <p className="line-clamp-2 md:text-base text-sm dark:font-normal font-bold dark:text-gray-300 text-slate-900 ">
+        <p className="line-clamp-2 md:text-base text-sm font-normal  text-gray-300 ">
           {description}
         </p>
       </div>

@@ -39,7 +39,7 @@ const Home: NextPage = (): ReactElement => {
             <a
               target="_blank"
               className="underline underline-offset-4 decoration-dotted decoration-1 "
-              href="https://res.cloudinary.com/dmzjszisi/image/upload/v1689334244/CV-MOHAMMAD_NURFAHMI_SUGIARTO_ui44ax.pdf"
+              href="https://res.cloudinary.com/dmzjszisi/image/upload/v1689385781/CV-MOHAMMAD_NURFAHMI_SUGIARTO_ui44ax.pdf"
             >
               Resume
             </a>

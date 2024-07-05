@@ -31,9 +31,8 @@ const Home: NextPage = (): ReactElement => {
             />
           </div>
           <p className="md:text-lg text-base md:text-left font-normal text-gray-300  text-center">
-            Informatics engineering student at Nusantara Islamic University, has
-            an interest in website development, especially in full stack web
-            developer
+            Passionate and experienced Back-end Engineer with expertise in the
+            TypeScript ecosystem
           </p>
           <div className="flex gap-5 md:text-lg text-base font-medium ">
             <a

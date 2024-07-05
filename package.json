@@ -4,22 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn prisma generate && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:gen": "drizzle-kit generate --config ./drizzle/config.ts",
+    "db:studio": "drizzle-kit studio --config ./drizzle/config.ts",
+    "db:reset": "drizzle-kit reset --config ./drizzle/config.ts",
+    "db:push": "drizzle-kit push --config ./drizzle/config.ts"
   },
   "dependencies": {
-    "@prisma/client": "^5.0.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
+    "drizzle-orm": "^0.31.2",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "next": "13.4.9",
+    "pg": "^8.12.0",
     "postcss": "8.4.25",
-    "prisma": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
@@ -28,6 +32,9 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.4.4"
-  }
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.22.8"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

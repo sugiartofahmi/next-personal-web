@@ -12,7 +12,7 @@ const Projects: NextPage = (): ReactElement => {
   const params = useParams();
   const [project, setProject] = useState<TProject | null>();
   const getData = async (): Promise<void> => {
-    const { data } = await api.get(`/api/projects/${params?.slug}`);
+    const { data } = await api.get(`/projects/${params?.id}`);
     setProject(data);
   };
   useEffect(() => {
@@ -41,7 +41,7 @@ const Projects: NextPage = (): ReactElement => {
           </h1>
           <div className="flex flex-row gap-x-2 items-center text-sm capitalize">
             <MdDateRange />
-            <h1> {project?.date}</h1>
+            <h1> {project?.date.split("T")[0]}</h1>
           </div>
           <p className="text-justify md:text-lg text-base">
             {project?.description}

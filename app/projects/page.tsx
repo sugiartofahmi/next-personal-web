@@ -6,10 +6,10 @@ import { Card } from "@/components";
 import { api } from "@/services";
 import { TProject } from "./types";
 const Projects: NextPage = (): ReactElement => {
-  const [projects, setProjects] = useState<[] | null>([]);
+  const [projects, setProjects] = useState<[]>([]);
   const getData = async (): Promise<void> => {
-    const { data } = await api.get("/api/projects");
-    setProjects(data?.projects);
+    const { data } = await api.get("/projects");
+    setProjects(data || []);
   };
   useEffect(() => {
     getData();
@@ -26,15 +26,16 @@ const Projects: NextPage = (): ReactElement => {
           </p>
         </div>
         <div className="flex flex-wrap w-full gap-x-4 md:gap-y-5 gap-y-4">
-          {projects?.map((el: TProject, i: number) => (
-            <Card
-              key={i}
-              title={el.title}
-              href={`/projects/${el.slug}`}
-              description={el.description}
-              image={el.image}
-            />
-          ))}
+          {projects.length > 0 &&
+            projects?.map((el: TProject, i: number) => (
+              <Card
+                key={i}
+                title={el.title}
+                href={`/projects/${el.id}`}
+                description={el.description}
+                image={el.image}
+              />
+            ))}
         </div>
       </div>
     </MainLayout>

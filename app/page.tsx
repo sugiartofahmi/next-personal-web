@@ -38,7 +38,7 @@ const Home: NextPage = (): ReactElement => {
             <a
               target="_blank"
               className="underline underline-offset-4 decoration-dotted decoration-1 "
-              href="https://drive.google.com/file/d/1hyIEnnsP4KAqZBaGpzmApCCr9t1OHgH3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1UzdKPbfNE1bgsnXkPVjQZv5igsSvklKt/view?usp=sharing"
             >
               Resume
             </a>

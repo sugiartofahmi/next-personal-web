@@ -22,7 +22,7 @@ export const Card: FC<TPropsCard> = ({
         />
       </figure>
       <div className="px-4 flex flex-col gap-1">
-        <h1 className="md:text-2xl text-lg font-extrabold">{title}</h1>
+        <h1 className="md:text-xl text-lg font-extrabold">{title}</h1>
         <p className="line-clamp-2 md:text-base text-sm font-normal  text-gray-300 ">
           {description}
         </p>

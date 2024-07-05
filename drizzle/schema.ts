@@ -7,4 +7,5 @@ export const projects = pgTable("projects", {
   date: timestamp("date", { withTimezone: true }),
   image: text("image").notNull(),
   tech: text("tech").array().notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
 });

@@ -57,9 +57,6 @@ const Projects: NextPage = (): ReactElement => {
               <li key={i}>{el}</li>
             ))}
           </ul>
-          <div className="pt-5 ">
-            <Button href={String(project?.url)} target="_blank" text="Visit" />
-          </div>
         </div>
       </div>
     </DetailLayout>

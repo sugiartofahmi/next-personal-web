@@ -41,7 +41,12 @@ const Projects: NextPage = (): ReactElement => {
           </h1>
           <div className="flex flex-row gap-x-2 items-center text-sm capitalize">
             <MdDateRange />
-            <h1> {project?.date.split("T")[0]}</h1>
+            <h1>
+              {new Date(project?.date as string).toLocaleString("default", {
+                month: "long",
+              })}{" "}
+              - {new Date(project?.date as string).getFullYear()}
+            </h1>
           </div>
           <p className="text-justify md:text-lg text-base">
             {project?.description}

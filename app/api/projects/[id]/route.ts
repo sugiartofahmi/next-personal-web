@@ -1,4 +1,3 @@
-import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 import { db, projects } from "@/drizzle";
 import { eq } from "drizzle-orm";

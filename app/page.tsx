@@ -31,8 +31,7 @@ const Home: NextPage = (): ReactElement => {
             />
           </div>
           <p className="md:text-lg text-base md:text-left font-normal text-gray-300  text-center">
-            Passionate and experienced Back-end Engineer with expertise in the
-            TypeScript ecosystem
+            Passionate and experienced Back-end Engineer
           </p>
           <div className="flex gap-5 md:text-lg text-base font-medium ">
             <a
